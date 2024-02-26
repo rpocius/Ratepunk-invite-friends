@@ -20,10 +20,10 @@ const EmailCard: React.FC = () => {
     };
 
     return (
-        <div className={styles.emailCard}>
+        <div className={styles.email_card}>
             <h1>REFER FRIENDS AND GET REWARDS</h1>
             <p>Refer your friends to us and earn hotel booking vouchers. We'll give you 1 coin for each friend that installs our extension. Minimum cash-out at 20 coins.</p>
-            {error && <div className={styles.errorState}>{error}</div>}
+            <div className={styles.error_state}>{error && <div>{error}</div>}</div>
             <form onSubmit={validateEmail}>
                 <input
                     type="email"
@@ -33,7 +33,7 @@ const EmailCard: React.FC = () => {
                 />
                 <button type="submit">Get Referral Link</button>
             </form>
-            <p className={styles.smallText}>Limits on max rewards apply.</p>
+            <p className={styles.small_text}>Limits on max rewards apply.</p>
         </div>
     );
 };

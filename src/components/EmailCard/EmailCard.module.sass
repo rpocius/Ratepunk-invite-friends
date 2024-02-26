@@ -1,0 +1,62 @@
+@import '@/styles/variables/colors'
+@import '@/styles/variables/fonts'
+
+.email_card
+    background-color: $color-7-email-card-background
+    height: 797px
+    width: 544px
+    border: 1px solid $color-3-regular-font
+    border-radius: 10px
+    padding: 64px 64px 63px 64px
+    margin: 64px 64px 64px 0
+    position: relative
+
+    & h1
+        @include caveat
+        font-size: 48px
+        margin: 0 0 16px 0
+
+    & p 
+        @include noto-regular
+        font-size: 20px
+        margin: 16px 0 40px 0
+
+    & .error_state
+        @include noto-regular
+        font-size: 12px
+        height: 12px
+        color: $color-11-error-state
+        margin: 0 0 7px 0
+
+    & form
+        width: 416px
+
+        & input
+            @include noto-regular
+            font-size: 20px
+            color: $color-8-email-address
+            width: 100%
+            height: 64px
+            border-radius: 10px
+            border: 1px solid $color-3-regular-font
+            margin: 0 0 8px 0
+
+        & button
+            @include noto-bold
+            font-size: 20px
+            color: $color-2-white
+            width: 100%
+            height: 64px
+            border-radius: 10px
+            border: 1px solid $color-3-regular-font
+            margin: 8px 0 0 0
+            background-color: $color-4-blue-font
+
+    & .small_text
+        @include noto-regular
+        font-size: 16px
+        color: $color-8-email-address
+        position: absolute
+        bottom: 0
+
+

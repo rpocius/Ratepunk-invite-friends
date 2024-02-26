@@ -3,17 +3,17 @@ import styles from './StoreLinks.module.sass';
 
 const StoreLinks: React.FC = () => {
     return (
-        <div className={styles.storeContainer}>
+        <div className={styles.store_container}>
             <div className={styles.store}>
                 <img src="chrome.svg" alt="Chrome" />
-                <div className={styles.storeText}>
+                <div className={styles.store_text}>
                     <p>available in the</p>
                     <p>chrome web store</p>
                 </div>
             </div>
             <div className={styles.store}>
                 <img src="apple.svg" />
-                <div className={styles.storeText}>
+                <div className={styles.store_text}>
                     <p>available in the</p>
                     <p>apple app store</p>
                 </div>

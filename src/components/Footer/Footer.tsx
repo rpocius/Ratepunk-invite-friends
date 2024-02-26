@@ -4,13 +4,13 @@ import styles from './Footer.module.sass';
 const Footer: React.FC = () => {
     return (
         <footer className={styles.footer}>
-            <div className={styles.footerLeft}>
+            <div className={styles.footer_left}>
                 <img src="logo.svg" alt="Ratepunk logo" className={styles.logo} />
                 <p>Ratepunk compares hotel room prices across the major online travel agencies. When you search for a room, Ratepunk extension scans the top booking sites and runs a price comparison, so you can be confident in knowing you’re getting the best deal!</p>
                 <p>© 2021 Ratepunk. All Rights Reserved.</p>
             </div>
-            <nav className={styles.footerNav}>
-                <div className={styles.footerNavLeft}>
+            <nav className={styles.footer_nav}>
+                <div className={styles.footer_nav_left}>
                     <h2>QUICK LINKS</h2>
                     <a href="#" target="_blank" rel="noopener noreferrer">Price Comparison</a>
                     <a href="#" target="_blank" rel="noopener noreferrer">Chrome Extension</a>
@@ -18,7 +18,7 @@ const Footer: React.FC = () => {
                     <a href="#" target="_blank" rel="noopener noreferrer">Ratepunk Blog</a>
                     <a href="#" target="_blank" rel="noopener noreferrer">Privacy Policy</a>
                 </div>
-                <div className={styles.footerNavRight}>
+                <div className={styles.footer_nav_right}>
                     <h2>CONTACT</h2>
                     <a href="mailto:hi@ratepunk.com">hi@ratepunk.com</a>
                     <h2>SOCIAL</h2>
