@@ -2,11 +2,9 @@
 @import '@/styles/variables/fonts'
 
 .instruction_container
-    padding: 64px 0
-    margin: 64px 0 64px 64px
-    height: 797px
-    width: 544px
-    border: 1px solid $color-3-regular-font
+    margin: 128px 0px 128px 64px
+    height: 669px
+    width: 448px
     display: flex
     flex-direction: column
     justify-content: space-between
@@ -14,6 +12,25 @@
     & .instruction_step
         display: flex
         justify-content: space-between
+
+    & .instruction_text
+        width: 256px
+
+        & .blue_text
+            @include noto-bold
+            font-size: 20px
+            color: $color-4-blue-font
+
+        & h3
+            @include caveat
+            font-size: 32px
+            color: $color-3-regular-font
+
+        & p
+            @include noto-regular
+            font-size: 20px
+            color: $color-3-regular-font
+
 
 
 
