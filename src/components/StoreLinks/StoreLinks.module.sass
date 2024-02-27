@@ -6,7 +6,7 @@
     height: 144px
     
 
-    & .store_links
+    .store_links
         display: flex
         justify-content: flex-start
         align-items: center
@@ -15,7 +15,7 @@
         height: 100%
         margin: auto
         
-        & .store
+        .store
             width: 312px
             height: 80px
             display: flex
@@ -32,24 +32,24 @@
                 margin-left: 24px
                 margin-right: 25px
 
-            & .store_text
+            .store_text
 
-                & .p1
+                .p1
                     @include noto-regular
                     font-size: 16px
                     color: $color-7-email-card-background
 
-                & .p2
+                .p2
                     font-family: 'Gadugi Bold'
                     size: 20px
                     color: $color-2-white
        
-        & .reviews
+        .reviews
             display: flex
             gap: 16px
             align-items: center
 
-            & .stars svg
+            .stars svg
                 width: 21px
                 height: 20px
                 margin: auto
@@ -58,5 +58,9 @@
                 @include noto-regular
                 color: $color-2-white
                 font-size: 20px
+                transition: color .25s ease-in-out 0s
+
+                &:hover
+                    color: $color-4-blue-font
 
 
