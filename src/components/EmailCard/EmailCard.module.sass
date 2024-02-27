@@ -40,6 +40,11 @@
             border-radius: 10px
             border: 1px solid $color-3-regular-font
             margin: 0 0 8px 0
+            background-image: url('/email.svg')
+            background-repeat: no-repeat
+            background-size: 20px 16px
+            background-position: left 20px center
+            padding-left: 55px
 
         button
             @include noto-bold
@@ -50,7 +55,15 @@
             border-radius: 10px
             border: 1px solid $color-3-regular-font
             margin: 8px 0 0 0
-            background-color: $color-4-blue-font
+            background-color: $color-4-blue-font 
+
+            &:hover
+                box-shadow: -2px 2px 5px #1F343E28
+                transform: scale(1.01)
+                position: relative
+                left: 1px
+                bottom: 1px
+                transition: all .15s ease-in-out
 
     .small_text
         @include noto-regular

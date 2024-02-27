@@ -7,6 +7,8 @@ const EmailCard: React.FC = () => {
 
     const emailRegex = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;;
 
+    const image = "";
+
     const validateEmail = (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
 
@@ -25,9 +27,10 @@ const EmailCard: React.FC = () => {
             <p>Refer your friends to us and earn hotel booking vouchers. We'll give you 1 coin for each friend that installs our extension. Minimum cash-out at 20 coins.</p>
             <div className={styles.error_state}>{error && <div>{error}</div>}</div>
             <form onSubmit={validateEmail}>
+                
                 <input
                     type="email"
-                    placeholder="Enter your email address"
+                    placeholder={`${image} Enter your email address`}
                     value={email}
                     onChange={(event) => setEmail(event.target.value)}
                 />
