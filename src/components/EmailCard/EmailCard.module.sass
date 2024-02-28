@@ -28,6 +28,15 @@
         color: $color-11-error-state
         margin: 0 0 7px 0
 
+    .success_message
+        @include noto-bold
+        font-size: 16px
+        line-height: 32px
+        display: flex
+        gap: 16px
+        align-items: center
+        margin-bottom: 16px
+
     form
         width: 416px
 
@@ -56,6 +65,7 @@
             border: 1px solid $color-3-regular-font
             margin: 8px 0 0 0
             background-color: $color-4-blue-font 
+            transition: all .25s ease-in-out
 
             &:hover
                 box-shadow: -2px 2px 5px #1F343E28
@@ -63,7 +73,41 @@
                 position: relative
                 left: 1px
                 bottom: 1px
-                transition: all .15s ease-in-out
+                
+    .referral_div
+        width: 416px
+        display: flex
+        
+        input
+            @include noto-regular
+            font-size: 20px
+            color: $color-8-email-address
+            width: 320px
+            height: 64px
+            border-radius: 10px 0 0 10px
+            border: 1px solid $color-3-regular-font
+            margin: 0 0 8px 0
+            padding-left: 20px
+
+        button
+            @include noto-bold
+            font-size: 20px
+            color: $color-2-white
+            background-color: $color-4-blue-font
+            width: 96px
+            height: 64px
+            border-radius: 0 10px 10px 0
+            border: 1px solid $color-3-regular-font
+            margin: 0 0 8px 0
+            transition: all .25s ease-in-out
+
+            &:hover
+                box-shadow: -2px 2px 5px #1F343E28
+                transform: scale(1.01)
+                position: relative
+                left: 1px
+                bottom: 1px
+                
 
     .small_text
         @include noto-regular
