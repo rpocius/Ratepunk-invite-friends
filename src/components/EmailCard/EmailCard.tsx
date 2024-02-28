@@ -8,21 +8,39 @@ const EmailCard: React.FC = () => {
 
     const emailRegex = /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/;
 
-    const image = "";
+    const updateEmailInBin = async (newEmail: string) => {
+        const binId = "65df911e266cfc3fde90b9ec";
+        const apiKey = "$2a$10$Dt5NEJ2Q/bkhtkdtb0Ujs.HMDon76LfKr6maxs8I7voB2DDKaSs5G";
+        const apiUrl = `https://api.jsonbin.io/v3/b/${binId}`;
+
+        try {
+            const response = await fetch(apiUrl, {
+                method: "PUT",
+                headers: {
+                    "Content-Type": "application/json",
+                    "X-Master-Key": apiKey
+                },
+                body: JSON.stringify({ email: newEmail })
+            });
+            const data = await response.json();
+            console.log(data);
+        } catch (error) {
+            console.error("Error updating email in bin:", error);
+        }
+    };
 
     const validateEmail = (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
 
-        event.preventDefault();
-
-    if (email === "") {
-        setError("Enter your email address");
-    } else if (emailRegex.test(email)) {
-        setError("");
-        setGoodEmail(true);
-    } else {
-        setError("This email is not valid");
-    }
+        if (email === "") {
+            setError("Enter your email address");
+        } else if (emailRegex.test(email)) {
+            setError("");
+            setGoodEmail(true);
+            updateEmailInBin(email);
+        } else {
+            setError("This email is not valid");
+        }
     };
 
     const referralLink = "https://ratepunk.com/referral"
@@ -60,7 +78,7 @@ const EmailCard: React.FC = () => {
                 <form onSubmit={validateEmail}>
                     <input
                         type="email"
-                        placeholder={`${image} Enter your email address`}
+                        placeholder={"Enter your email address"}
                         value={email}
                         onChange={(event) => setEmail(event.target.value)}
                     />
