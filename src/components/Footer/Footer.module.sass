@@ -14,6 +14,10 @@
         display: flex
         gap: 128px
 
+            
+        .p3
+            display: none
+
         .footer_left
             display: flex
             flex-direction: column
@@ -94,3 +98,81 @@
                             border: 1px solid $color-3-regular-font
 
 
+// MOBILE
+@media (max-width: 1120px)
+
+    .footer
+        background-color: $color-7-email-card-background
+        width: 100vw
+        height: auto
+
+        &_container
+            min-width: 375px
+            height: auto
+            margin: 48px 32px
+            display: flex
+            flex-direction: column
+            gap: 48px
+
+            .p3
+                @include noto-regular
+                font-size: 16px
+                color: $color-8-email-address
+                display: block
+
+            .footer_left
+                justify-content: flex-start
+                gap: 32px
+                width: auto
+
+                .logo 
+                    width: 125px
+                    height: 32px
+
+                .p2
+                    display: none
+
+            .footer_nav
+                width: auto
+                height: auto
+                flex-direction: column
+                gap: 32px
+
+                & h2
+                    font-size: 16px
+
+                & a
+                    @include noto-regular
+                    font-size: 16px
+                    color: $color-3-regular-font
+                    transition: color .25s ease-in-out 0s
+
+                &_left
+                    gap: 23px
+
+                    &_links
+                        gap: 15px
+
+                &_right
+                    justify-content: flex-start
+                    gap: 27px
+
+                    & .contact
+                        gap: 23px
+
+                    & .social
+                        gap: 23px
+
+                        &_links
+                            display: flex
+                            gap: 8px
+
+                            & a
+                                background-color: $color-4-blue-font
+                                width: 32px
+                                height: 32px
+                                line-height: 32px
+                                border-radius: 10px
+                                text-align: center
+                                vertical-align: middle
+                                border: 1px solid $color-3-regular-font

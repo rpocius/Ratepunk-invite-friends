@@ -38,6 +38,7 @@ const Footer: React.FC = () => {
                         </div>
                     </div>
                 </nav>
+                <p className={styles.p3}>© 2021 Ratepunk. All Rights Reserved.</p>
             </div>
         </footer>
     );
