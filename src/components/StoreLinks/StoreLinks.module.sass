@@ -63,4 +63,66 @@
                 &:hover
                     color: $color-4-blue-font
 
+// MOBILE
+@media (max-width: 1120px)
 
+    .store_container
+        height: auto
+        width: 100vw
+        display: flex
+        justify-content: center
+        align-items: center
+
+        .store_links
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            gap: 16px
+            width: 375px
+            height: auto
+            margin: 32px
+            padding: 0
+
+            .store
+
+                & img
+                    width: 65px
+                    height: 58px
+                    margin-left: 24px
+                    margin-right: 25px
+
+                .store_text
+
+                    .p1
+                        @include noto-regular
+                        font-size: 16px
+                        color: $color-7-email-card-background
+
+                    .p2
+                        font-family: 'Gadugi Bold'
+                        size: 20px
+                        color: $color-2-white
+        
+            .reviews
+                display: flex
+                gap: 16px
+                align-items: center
+                justify-content: center
+                line-height: 22px
+                vertical-align: middle
+
+                .stars
+                    display: flex
+                    align-items: center
+                    
+                    & svg
+                        width: 16px
+                        height: 16px
+
+                & a
+                    @include noto-regular
+                    color: $color-2-white
+                    line-height: 22px
+                    vertical-align: middle
+                    font-size: 16px
+                    transition: color .25s ease-in-out 0s
