@@ -11,12 +11,12 @@
 - Use [JSONBIN](https://jsonbin.io/) or an alternative to save only the last entered email.
 - Menu links can be empty.
 - Social links can be empty.
+- Publish the finished task to a GitHub repo.
 
 ## Links:
 - [Chrome Store Link](https://chrome.google.com/webstore/detail/ratepunk-same-hotel-way-c/gdaioanblcnghddimngklkhgcbomfdck?utm_source=ratepunk)
 - [Apple Store Link](https://apps.apple.com/app/ratepunk/id1607823726)
 
-- Publish the finished task to a GitHub repo.
 
 ## Getting Started
 
