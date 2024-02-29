@@ -9,6 +9,12 @@
     flex-direction: column
     justify-content: space-between
 
+    .img_desktop
+        display: block
+
+    .img_mobile
+        display: none
+
     .instruction_step
         display: flex
         justify-content: space-between
@@ -32,5 +38,39 @@
             color: $color-3-regular-font
 
 
+// MOBILE
+@media (max-width: 1120px)
 
+    .instruction_container
+        height: auto
+        width: 343px
+        padding: 0 0 48px 0
+        margin: 0 16px
+        align-items: center
+
+        .img_desktop
+            display: none
+
+        .img_mobile
+            display: block
+
+        .instruction_step
+            flex-direction: column
+            align-items: center
+            margin: 49px 0 0 0
+            padding: 0
+
+        .instruction_text
+            text-align: center
+
+            .blue_text
+                font-size: 16px
+                margin-top: 32px
+
+            h3
+                margin: 16px 0
+
+            p
+                font-size: 16px
+                margin: 0
 

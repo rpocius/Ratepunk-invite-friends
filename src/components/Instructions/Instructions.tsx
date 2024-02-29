@@ -13,12 +13,13 @@ const Instructions: React.FC = () => {
         </div>
       </div>
       <div className={styles.instruction_step}>
+      <img src="collect-coins.svg" alt="Collect coins" style={{ width: '144px', height : '144px' }} className={styles.img_mobile} />
         <div className={styles.instruction_text}>
         <h2 className={styles.blue_text}>STEP 2</h2>
         <h3>COLLECT COINS</h3>
         <p>Get 1 coin for each friend that installs our extension using your referral link.</p>
         </div>
-        <img src="collect-coins.svg" alt="Collect coins" style={{ width: '144px', height : '144px' }} />
+        <img src="collect-coins.svg" alt="Collect coins" style={{ width: '144px', height : '144px' }} className={styles.img_desktop} />
       </div>
       <div className={styles.instruction_step}>
         <img src="voucher.svg" alt="Voucher" style={{ width: '144px', height : '144px' }} />
