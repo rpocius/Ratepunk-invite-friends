@@ -1,4 +1,3 @@
-import React from 'react';
 import EmailCard from '../EmailCard/EmailCard';
 import Instructions from '../Instructions/Instructions';
 import styles from './EmailSection.module.sass';

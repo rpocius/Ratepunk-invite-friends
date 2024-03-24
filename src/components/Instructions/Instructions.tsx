@@ -1,11 +1,11 @@
-import React from 'react';
 import styles from './Instructions.module.sass';
+import Image from 'next/image';
 
 const Instructions: React.FC = () => {
   return (
     <div className={styles.instruction_container}>
       <div className={styles.instruction_step}>
-        <img src="invite.svg" alt="Invite" style={{ width: '128px', height : '140.44px' }} />
+        <Image src="invite.svg" alt="Invite" width={128} height={140} />
         <div className={styles.instruction_text}>
         <h2 className={styles.blue_text}>STEP 1</h2>
         <h3>INVITE FRIENDS</h3>
@@ -13,16 +13,16 @@ const Instructions: React.FC = () => {
         </div>
       </div>
       <div className={styles.instruction_step}>
-      <img src="collect-coins.svg" alt="Collect coins" style={{ width: '144px', height : '144px' }} className={styles.img_mobile} />
+      <Image src="collect-coins.svg" alt="Collect coins" width={144} height={144} className={styles.img_mobile} />
         <div className={styles.instruction_text}>
         <h2 className={styles.blue_text}>STEP 2</h2>
         <h3>COLLECT COINS</h3>
         <p>Get 1 coin for each friend that installs our extension using your referral link.</p>
         </div>
-        <img src="collect-coins.svg" alt="Collect coins" style={{ width: '144px', height : '144px' }} className={styles.img_desktop} />
+        <Image src="collect-coins.svg" alt="Collect coins" width={144} height={144} className={styles.img_desktop} />
       </div>
       <div className={styles.instruction_step}>
-        <img src="voucher.svg" alt="Voucher" style={{ width: '144px', height : '144px' }} />
+        <Image src="voucher.svg" alt="Voucher" width={144} height={144} />
         <div className={styles.instruction_text}>
         <h2 className={styles.blue_text}>STEP 3</h2>
         <h3>GET VOUCHER</h3>

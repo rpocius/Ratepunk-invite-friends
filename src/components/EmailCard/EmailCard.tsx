@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import styles from './EmailCard.module.sass';
+import Image from 'next/image';
 
 const EmailCard: React.FC = () => {
   const [email, setEmail] = useState('');
@@ -59,7 +60,7 @@ const EmailCard: React.FC = () => {
       {goodEmail ? (
         <>
           <span className={styles.success_message}>
-            <img src="/success.svg" alt="success" width={"24px"} height={"24px"} />
+            <Image src="/success.svg" alt="success" width={24} height={24} />
             Your email is confirmed!
           </span>
           <div className={styles.referral_div}>

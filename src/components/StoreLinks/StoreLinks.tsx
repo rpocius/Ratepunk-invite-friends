@@ -1,5 +1,5 @@
-import React from 'react';
 import styles from './StoreLinks.module.sass';
+import Image from 'next/image';
 
 const StoreLinks: React.FC = () => {
     return (
@@ -9,7 +9,7 @@ const StoreLinks: React.FC = () => {
                 target="_blank" 
                 className={styles.store}
                 rel="noopener noreferrer" >
-                    <img src="chrome.svg" alt="Chrome" />
+                    <Image src="chrome.svg" alt="Chrome" width={65} height={58} />
                     <div className={styles.store_text}>
                         <p className={styles.p1} >available in the</p>
                         <p className={styles.p2} >chrome web store</p>
@@ -19,7 +19,7 @@ const StoreLinks: React.FC = () => {
                 target="_blank" 
                 className={styles.store}
                 rel="noopener noreferrer" >
-                    <img src="apple.svg" />
+                    <Image src="apple.svg" width={65} height={58} />
                     <div className={styles.store_text}>
                         <p className={styles.p1} >available in the</p>
                         <p className={styles.p2} >apple app store</p>
