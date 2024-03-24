@@ -19,7 +19,7 @@ const StoreLinks: React.FC = () => {
                 target="_blank" 
                 className={styles.store}
                 rel="noopener noreferrer" >
-                    <Image src="apple.svg" width={65} height={58} />
+                    <Image src="apple.svg" width={65} height={58} alt="App Store" />
                     <div className={styles.store_text}>
                         <p className={styles.p1} >available in the</p>
                         <p className={styles.p2} >apple app store</p>
