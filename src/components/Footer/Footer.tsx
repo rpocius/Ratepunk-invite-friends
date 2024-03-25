@@ -1,5 +1,6 @@
 import styles from './Footer.module.sass';
 import Image from 'next/image';
+import Link from "next/link";
 
 const Footer: React.FC = () => {
     return (
@@ -14,26 +15,26 @@ const Footer: React.FC = () => {
                     <div className={styles.footer_nav_left}>
                         <h2>QUICK LINKS</h2>
                         <div className={styles.footer_nav_left_links}>
-                            <a href="#" target="_blank" rel="noopener noreferrer">Price Comparison</a>
-                            <a href="#" target="_blank" rel="noopener noreferrer">Chrome Extension</a>
-                            <a href="#" target="_blank" rel="noopener noreferrer">How It Works</a>
-                            <a href="#" target="_blank" rel="noopener noreferrer">Ratepunk Blog</a>
-                            <a href="#" target="_blank" rel="noopener noreferrer">Privacy Policy</a>
+                            <Link href="#" target="_blank" rel="noopener noreferrer">Price Comparison</Link>
+                            <Link href="#" target="_blank" rel="noopener noreferrer">Chrome Extension</Link>
+                            <Link href="#" target="_blank" rel="noopener noreferrer">How It Works</Link>
+                            <Link href="#" target="_blank" rel="noopener noreferrer">Ratepunk Blog</Link>
+                            <Link href="#" target="_blank" rel="noopener noreferrer">Privacy Policy</Link>
                         </div>
                     </div>
                     <div className={styles.footer_nav_right}>
                         <div className={styles.contact}>
                             <h2>CONTACT</h2>
-                            <a href="mailto:hi@ratepunk.com">hi@ratepunk.com</a>
+                            <Link href="mailto:hi@ratepunk.com">hi@ratepunk.com</Link>
                         </div>
                         <div className={styles.social}>
                             <h2>SOCIAL</h2>
                             <div className={styles.social_links}>
-                                <a href="https://www.instagram.com/ratepunk/" target="_blank" rel="noopener noreferrer"><Image src="/instagram.svg" alt="Instagram logo" width={16} height={16} /></a>
-                                <a href="https://www.facebook.com/r8punk/" target="_blank" rel="noopener noreferrer"><Image src="facebook.svg" alt="Facebook logo" width={16} height={16} /></a>
-                                <a href="https://www.linkedin.com/company/ratepunk/" target="_blank" rel="noopener noreferrer"><Image src="linkedin.svg" alt="LinkedIn logo" width={16} height={16} /></a>
-                                <a href="https://twitter.com/rate_punk" target="_blank" rel="noopener noreferrer"><Image src="twitter.svg" alt="Twitter logo" width={16} height={16} /></a>
-                                <a href="https://www.tiktok.com/@ryanthetravelguy?lang=en" target="_blank" rel="noopener noreferrer"><Image src="tiktok.svg" alt="TikTok logo" width={16} height={16} /></a>
+                                <Link href="https://www.instagram.com/ratepunk/" target="_blank" rel="noopener noreferrer"><Image src="/instagram.svg" alt="Instagram logo" width={16} height={16} /></Link>
+                                <Link href="https://www.facebook.com/r8punk/" target="_blank" rel="noopener noreferrer"><Image src="facebook.svg" alt="Facebook logo" width={16} height={16} /></Link>
+                                <Link href="https://www.linkedin.com/company/ratepunk/" target="_blank" rel="noopener noreferrer"><Image src="linkedin.svg" alt="LinkedIn logo" width={16} height={16} /></Link>
+                                <Link href="https://twitter.com/rate_punk" target="_blank" rel="noopener noreferrer"><Image src="twitter.svg" alt="Twitter logo" width={16} height={16} /></Link>
+                                <Link href="https://www.tiktok.com/@ryanthetravelguy?lang=en" target="_blank" rel="noopener noreferrer"><Image src="tiktok.svg" alt="TikTok logo" width={16} height={16} /></Link>
                             </div>
                         </div>
                     </div>
