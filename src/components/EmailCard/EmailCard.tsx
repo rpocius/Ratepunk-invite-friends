@@ -13,7 +13,7 @@ const EmailCard: React.FC = () => {
     const binId = "65df911e266cfc3fde90b9ec";
     const apiKey = "$2a$10$Dt5NEJ2Q/bkhtkdtb0Ujs.HMDon76LfKr6maxs8I7voB2DDKaSs5G";
     const apiUrl = `https://api.jsonbin.io/v3/b/${binId}`;
-
+  
     try {
       const response = await fetch(apiUrl, {
         method: "PUT",
@@ -23,6 +23,11 @@ const EmailCard: React.FC = () => {
         },
         body: JSON.stringify({ email: newEmail })
       });
+  
+      if (!response.ok) {
+        throw new Error(`HTTP error! Status: ${response.status}`);
+      }
+  
       const data = await response.json();
     } catch (error) {
       console.error("Error updating email in bin:", error);
