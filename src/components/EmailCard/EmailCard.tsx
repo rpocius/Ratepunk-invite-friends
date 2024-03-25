@@ -10,17 +10,17 @@ const EmailCard: React.FC = () => {
   const emailRegex = /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/;
 
   const updateEmailInBin = async (newEmail: string) => {
-    const binId = "65df911e266cfc3fde90b9ec";
-    const apiKey = "$2a$10$Dt5NEJ2Q/bkhtkdtb0Ujs.HMDon76LfKr6maxs8I7voB2DDKaSs5G";
+    const binId = process.env.NEXT_PUBLIC_JSONBIN_BIN_ID;
+    const apiKey = process.env.NEXT_PUBLIC_JSONBIN_API_KEY || "";
     const apiUrl = `https://api.jsonbin.io/v3/b/${binId}`;
   
     try {
       const response = await fetch(apiUrl, {
         method: "PUT",
-        headers: {
+        headers: new Headers({
           "Content-Type": "application/json",
-          "X-Master-Key": apiKey
-        },
+          "X-Master-Key": apiKey,
+        }),
         body: JSON.stringify({ email: newEmail })
       });
   
